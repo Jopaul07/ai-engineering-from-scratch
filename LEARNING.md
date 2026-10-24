@@ -49,7 +49,7 @@ Software Engineering Fundamentals (`learning-paths/software-engineering-fundamen
 | 3 | Phase 0 · 06 — Python Environments | Complete (learner-reported) |
 | 4 | Phase 0 · 07 — Docker for AI | Complete (learner-reported) |
 | 5 | Phase 0 · 09 — Data Management | Complete |
-| 6 | Phase 0 · 10 — Terminal & Shell | Pending |
+| 6 | Phase 0 · 10 — Terminal & Shell | Complete |
 | 7 | Phase 0 · 12 — Debugging & Profiling | Pending |
 | 8 | Phase 13 · 01 — The Tool Interface | Pending |
 | 9 | Phase 13 · 05 — Tool Schema Design | Pending |
@@ -67,6 +67,7 @@ Software Engineering Fundamentals (`learning-paths/software-engineering-fundamen
 | 2026-10-22 | Phase 0 · 06 — Python Environments | — | Learner-reported complete. |
 | 2026-10-22 | Phase 0 · 07 — Docker for AI | — | Learner-reported complete. |
 | 2026-10-22 | Phase 0 · 09 — Data Management | 3/3 | Solid on streaming (knew IterableDataset has no len()). Ran all code live via root .venv; needed `uv pip install --python .venv/bin/python datasets`. |
+| 2026-10-24 | Phase 0 · 10 — Terminal & Shell | 3/3 | Stumbled on fd/redirect semantics (`2>&1`) at first — live wrong-order demo made it click. Mixed up the two meanings of `&`; proved both with `2>1` junk-file demo. |
 
 ## Review queue
 
