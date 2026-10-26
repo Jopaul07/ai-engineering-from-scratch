@@ -68,6 +68,7 @@ Software Engineering Fundamentals (`learning-paths/software-engineering-fundamen
 | 2026-10-22 | Phase 0 · 07 — Docker for AI | — | Learner-reported complete. |
 | 2026-10-22 | Phase 0 · 09 — Data Management | 3/3 | Solid on streaming (knew IterableDataset has no len()). Ran all code live via root .venv; needed `uv pip install --python .venv/bin/python datasets`. |
 | 2026-10-24 | Phase 0 · 10 — Terminal & Shell | 3/3 | Stumbled on fd/redirect semantics (`2>&1`) at first — live wrong-order demo made it click. Mixed up the two meanings of `&`; proved both with `2>1` junk-file demo. |
+| 2026-10-26 | Phase 0 · 10 — Terminal & Shell exercises | — | All 4 done: tmux 3-pane detach/reattach verified live via `tmux ls`; aliases appended to ~/.zshrc after zsh -n + child-shell trial-load; 100-epoch grep/awk pipeline solo (100 lines, decreasing); ~/.ssh/config written + verified via `ssh -G gpu`. Learner declined live Remote Login test for security reasons — correct call. Key insight gained: `bash script.sh` vs `source` (child process vs same-process state). |
 
 ## Review queue
 
