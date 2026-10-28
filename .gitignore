@@ -48,6 +48,7 @@ models/
 checkpoints/
 wandb/
 mlruns/
+runs/
 *.pt
 *.pth
 *.onnx

@@ -50,7 +50,7 @@ Software Engineering Fundamentals (`learning-paths/software-engineering-fundamen
 | 4 | Phase 0 · 07 — Docker for AI | Complete (learner-reported) |
 | 5 | Phase 0 · 09 — Data Management | Complete |
 | 6 | Phase 0 · 10 — Terminal & Shell | Complete |
-| 7 | Phase 0 · 12 — Debugging & Profiling | Pending |
+| 7 | Phase 0 · 12 — Debugging & Profiling | Complete |
 | 8 | Phase 13 · 01 — The Tool Interface | Pending |
 | 9 | Phase 13 · 05 — Tool Schema Design | Pending |
 | 10 | Phase 14 · 38 — Verification Gates | Pending |
@@ -70,6 +70,7 @@ Software Engineering Fundamentals (`learning-paths/software-engineering-fundamen
 | 2026-10-24 | Phase 0 · 10 — Terminal & Shell | 3/3 | Stumbled on fd/redirect semantics (`2>&1`) at first — live wrong-order demo made it click. Mixed up the two meanings of `&`; proved both with `2>1` junk-file demo. |
 | 2026-10-26 | Phase 0 · 10 — Terminal & Shell exercises | — | All 4 done: tmux 3-pane detach/reattach verified live via `tmux ls`; aliases appended to ~/.zshrc after zsh -n + child-shell trial-load; 100-epoch grep/awk pipeline solo (100 lines, decreasing); ~/.ssh/config written + verified via `ssh -G gpu`. Learner declined live Remote Login test for security reasons — correct call. Key insight gained: `bash script.sh` vs `source` (child process vs same-process state). |
 | 2026-10-26 | Phase 0 · 11 — Linux for AI | 5/5 | Exercises done locally (tmux detach/reattach, df/du cache audit, htop mem sort). Quiz clean on first pass: ~ home, sudo, chmod +x, du/sort for disk hogs, macOS vs GNU sed -i gotcha. |
+| 2026-10-28 | Phase 0 · 12 — Debugging & Profiling | 3/3 | Strong instincts: picked data-leakage + set-intersection confirm unprompted; knew clipping is for exploding not vanishing. Sharpened: gradient flows loss→layer1, so "furthest from the loss" is the unambiguous phrasing. logging level-toggle over commenting out. |
 
 ## Review queue
 
