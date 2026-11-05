@@ -161,14 +161,25 @@ def demo_shape_checking():
     check_shapes(model, sample)
 
 
+class BuggyModel(nn.Module):
+    """Divides the output by a zero tensor — injects Inf/NaN into the forward pass."""
+
+    def __init__(self):
+        super().__init__()
+        self.net = nn.Sequential(
+            nn.Linear(784, 256),
+            nn.ReLU(),
+            nn.Linear(256, 10),
+        )
+
+    def forward(self, x):
+        return self.net(x) / torch.zeros(1)
+
+
 def demo_nan_detection():
     print("\n--- 5. NaN Detection ---")
 
-    model = nn.Sequential(
-        nn.Linear(784, 256),
-        nn.ReLU(),
-        nn.Linear(256, 10),
-    )
+    model = BuggyModel()
 
     x = torch.randn(4, 784)
     target = torch.randint(0, 10, (4,))
