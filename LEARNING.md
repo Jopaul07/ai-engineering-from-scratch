@@ -51,7 +51,7 @@ Software Engineering Fundamentals (`learning-paths/software-engineering-fundamen
 | 5 | Phase 0 · 09 — Data Management | Complete |
 | 6 | Phase 0 · 10 — Terminal & Shell | Complete |
 | 7 | Phase 0 · 12 — Debugging & Profiling | Complete |
-| 8 | Phase 13 · 01 — The Tool Interface | Pending |
+| 8 | Phase 13 · 01 — The Tool Interface | Complete |
 | 9 | Phase 13 · 05 — Tool Schema Design | Pending |
 | 10 | Phase 14 · 38 — Verification Gates | Pending |
 | 11 | Phase 17 · 20 — Shadow, Canary, Progressive | Pending |
@@ -71,6 +71,8 @@ Software Engineering Fundamentals (`learning-paths/software-engineering-fundamen
 | 2026-10-26 | Phase 0 · 10 — Terminal & Shell exercises | — | All 4 done: tmux 3-pane detach/reattach verified live via `tmux ls`; aliases appended to ~/.zshrc after zsh -n + child-shell trial-load; 100-epoch grep/awk pipeline solo (100 lines, decreasing); ~/.ssh/config written + verified via `ssh -G gpu`. Learner declined live Remote Login test for security reasons — correct call. Key insight gained: `bash script.sh` vs `source` (child process vs same-process state). |
 | 2026-10-26 | Phase 0 · 11 — Linux for AI | 5/5 | Exercises done locally (tmux detach/reattach, df/du cache audit, htop mem sort). Quiz clean on first pass: ~ home, sudo, chmod +x, du/sort for disk hogs, macOS vs GNU sed -i gotcha. |
 | 2026-10-28 | Phase 0 · 12 — Debugging & Profiling | 3/3 | Strong instincts: picked data-leakage + set-intersection confirm unprompted; knew clipping is for exploding not vanishing. Sharpened: gradient flows loss→layer1, so "furthest from the loss" is the unambiguous phrasing. logging level-toggle over commenting out. |
+| 2026-11-03 | Phase 13 · 01 — The Tool Interface | 3/3 | No quiz.json ships with this lesson (repo gap) — examined from lesson material. Needed two corrections on ownership: decide = model (not host), observe = host (not model); recurred on MCP observe. Strong on validator trace, JSON failure modes, pure/consequential reasoning. |
+| 2026-11-03 | Phase 13 · 01 — exercises 1–5 | — | All done in code/exercises.py: added get_stock_price (fixed glued description, error-not-default for unknown ticker), unknown-field reject enforced in validator, probes separated from happy paths, place_trade gate firing, Claude Desktop MCP mermaid + table, tool_choice identified. Needed correction: thought model routes MCP calls (host does); vague on tool poisoning — sharpened to poisoned descriptions. |
 
 ## Review queue
 
